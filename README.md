@@ -17,3 +17,13 @@
     export-additional-refs.named-branch-heads:template = refs/heads/{branch}
     use_namespaces = True 
     branch_bookmark_suffix=_bookmark
+# Push to github
+    hg push
+    cd ..
+    git clone git@github.com:ouboub/hggit-force.git
+    cd hggit-force
+# Git's side
+    Git: cloned, first git commit
+    git add .
+    git commit -m 'Git: First git commit on the git main branch'
+    git push
